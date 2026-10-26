@@ -1,5 +1,5 @@
 /* Service worker : le carnet fonctionne sans réseau après la première ouverture. */
-var CACHE = 'fi26-1-mvp3nw5f';
+var CACHE = 'fi26-1-mvp59rzl';
 var FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); }).then(function () { return self.skipWaiting(); }));
